@@ -68,14 +68,17 @@ void Error_Handler(void);
 #define LCD_CS_Pin GPIO_PIN_8
 #define LCD_CS_GPIO_Port GPIOD
 
+
+
+
+/* USER CODE BEGIN Private defines */
 #define Toggle_GPIO GPIOA
 #define Toggle_X GPIO_PIN_5
 #define Toggle_Y GPIO_PIN_4
 #define Toggle_B GPIO_PIN_6
-
-
-/* USER CODE BEGIN Private defines */
-
+#define Button_GPIO GPIOE
+#define Button_K0_PIN GPIO_PIN_3
+#define Button_K1_PIN GPIO_PIN_4
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

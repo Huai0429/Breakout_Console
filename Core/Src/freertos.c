@@ -27,6 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include "stdio.h" 
 #include "Game.h"
+#include "adc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -271,10 +272,13 @@ void Task2Entry(void *argument)
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_RESET);
       LED_flag = 1;
     }
-    // uint8_t Toggle_Xvalue = HAL_GPIO_ReadPin(Toggle_GPIO,Toggle_X);
-    // uint8_t Toggle_Yvalue = HAL_GPIO_ReadPin(Toggle_GPIO,Toggle_Y);
-    uint8_t Toggle_Bvalue = HAL_GPIO_ReadPin(Toggle_GPIO,Toggle_B);
-    printf("Button %d\n",Toggle_Bvalue);
+    uint8_t Toggle_Xvalue = get_adc_value(5);
+    uint8_t Toggle_Yvalue = get_adc_value(4);
+    // uint8_t Toggle_Bvalue = HAL_GPIO_ReadPin(Toggle_GPIO,Toggle_B);
+    uint8_t K0_val = HAL_GPIO_ReadPin(Button_GPIO,Button_K0_PIN);
+    uint8_t K1_val = HAL_GPIO_ReadPin(Button_GPIO,Button_K1_PIN);
+
+    printf("Button K0 %d K1 %d \n",K0_val,K1_val);
 
     // printf("X : %d, Y : %d\n",Toggle_Xvalue,Toggle_Yvalue);
     // printf("%5d In Task2 End\n",xTaskGetTickCount());
