@@ -6,8 +6,14 @@ lcdwrtos/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
+  D:\Keil\ARM\ARMCLANG\include\stdint.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\cmsis_version.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\cmsis_compiler.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\cmsis_armclang.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  D:\Keil\ARM\ARMCLANG\include\stddef.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h \
@@ -39,4 +45,8 @@ lcdwrtos/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
   ..\Core\Inc\spi.h ..\Core\Inc\usart.h ..\Core\Inc\gpio.h \
-  ..\Core\Inc\adc.h ..\Core\Inc\ili9488.h ..\Core\Inc\Game.h
+  ..\Core\Inc\adc.h D:\Keil\ARM\ARMCLANG\include\stdio.h \
+  ..\Core\Inc\ili9488.h D:\Keil\ARM\ARMCLANG\include\math.h \
+  D:\Keil\ARM\ARMCLANG\include\stdbool.h \
+  D:\Keil\ARM\ARMCLANG\include\stdlib.h \
+  D:\Keil\ARM\ARMCLANG\include\string.h ..\Core\Inc\Game.h

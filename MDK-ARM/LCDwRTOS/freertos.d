@@ -1,6 +1,7 @@
 lcdwrtos/freertos.o: ..\Core\Src\freertos.c \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
-  ..\Core\Inc\FreeRTOSConfig.h \
+  D:\Keil\ARM\ARMCLANG\include\stddef.h \
+  D:\Keil\ARM\ARMCLANG\include\stdint.h ..\Core\Inc\FreeRTOSConfig.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h \
@@ -15,6 +16,10 @@ lcdwrtos/freertos.o: ..\Core\Src\freertos.c \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\cmsis_version.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\cmsis_compiler.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\cmsis_armclang.h \
+  c:\Users\GC\Desktop\Breakout_Console\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h \
@@ -38,4 +43,8 @@ lcdwrtos/freertos.o: ..\Core\Src\freertos.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
-  ..\Core\Inc\Game.h ..\Core\Inc\ili9488.h ..\Core\Inc\adc.h
+  D:\Keil\ARM\ARMCLANG\include\stdio.h ..\Core\Inc\Game.h \
+  D:\Keil\ARM\ARMCLANG\include\stdlib.h ..\Core\Inc\ili9488.h \
+  D:\Keil\ARM\ARMCLANG\include\math.h \
+  D:\Keil\ARM\ARMCLANG\include\stdbool.h \
+  D:\Keil\ARM\ARMCLANG\include\string.h ..\Core\Inc\adc.h

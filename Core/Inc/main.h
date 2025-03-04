@@ -78,7 +78,7 @@ void Error_Handler(void);
 #define Toggle_B GPIO_PIN_6
 #define Button_GPIO GPIOE
 #define Button_K0_PIN GPIO_PIN_3
-#define Button_K1_PIN GPIO_PIN_4
+#define Button_K1_PIN GPIO_PIN_6
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

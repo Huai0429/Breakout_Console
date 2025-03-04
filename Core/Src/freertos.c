@@ -218,7 +218,7 @@ void Task1Entry(void *argument)
   // s_Ball_stat *ptrBall = &Ball;
   for(;;)
   {
-    printf("%5d In Task1\n",xTaskGetTickCount());
+    // printf("%5d In Task1\n",xTaskGetTickCount());
     // (*ptrBall)->move_pfn(0,0,0);
     // osStatus_t stat = osMutexAcquire(Mutex_LCDHandle,2000);
     // if(stat != 0){
@@ -244,7 +244,7 @@ void Task1Entry(void *argument)
     //   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET);
     //   LED_flag = 1;
     // }
-    printf("%5d In Task1 End\n",xTaskGetTickCount());
+    // printf("%5d In Task1 End\n",xTaskGetTickCount());
     osDelay(3);
   }
   /* USER CODE END Task1Entry */
@@ -272,17 +272,16 @@ void Task2Entry(void *argument)
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_RESET);
       LED_flag = 1;
     }
-    uint8_t Toggle_Xvalue = get_adc_value(5);
-    uint8_t Toggle_Yvalue = get_adc_value(4);
+    uint8_t Toggle_Xvalue = get_adc_value();
+    uint8_t Toggle_Yvalue = get_adc_value();
     // uint8_t Toggle_Bvalue = HAL_GPIO_ReadPin(Toggle_GPIO,Toggle_B);
     uint8_t K0_val = HAL_GPIO_ReadPin(Button_GPIO,Button_K0_PIN);
     uint8_t K1_val = HAL_GPIO_ReadPin(Button_GPIO,Button_K1_PIN);
 
     printf("Button K0 %d K1 %d \n",K0_val,K1_val);
-
-    // printf("X : %d, Y : %d\n",Toggle_Xvalue,Toggle_Yvalue);
+    printf("X : %d, Y : %d\n",Toggle_Xvalue,Toggle_Yvalue);
     // printf("%5d In Task2 End\n",xTaskGetTickCount());
-    osDelay(18);
+    osDelay(1);
   }
   /* USER CODE END Task2Entry */
 }
